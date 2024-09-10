@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function Header() {
+export default function Header(props) {
   return (
     <View>
-      <Text>Header</Text>
+      {/* use the prop here */}
+      <Text>Welcome to {props.name}</Text>
+      {props.children}
     </View>
   )
 }
